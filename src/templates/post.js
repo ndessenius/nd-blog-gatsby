@@ -63,11 +63,11 @@ export default class PostTemplate extends Component {
 
     const commentTitle = commentLength => {
       if (commentLength < 1) {
-        return 'Comments'
+        return 'Commentaires'
       } else if (commentLength === 1) {
-        return '1 comment'
+        return '1 commentaire'
       } else {
-        return `${commentLength} comments`
+        return `${commentLength} commentaires`
       }
     }
 

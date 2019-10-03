@@ -75,14 +75,14 @@
       &.kofi-button {
         display: block;
         padding: 0.6rem 0.6rem 0.4rem;
-        background: $primary-color;
+      //  background: $primary-color;
         border-radius: $border-radius;
         margin: 0;
 
         &:hover,
         &:active,
         &:focus {
-          background: darken($primary-color, 10%);
+      //    background: darken($primary-color, 10%);
         }
 
         &:active {

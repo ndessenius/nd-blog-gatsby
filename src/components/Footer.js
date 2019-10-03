@@ -14,7 +14,7 @@ export default class Footer extends Component {
           </a>
 
           {/* <Link to="/contact">Newsletter</Link> */}
-          <a href="https://www.taniarascia.com/rss.xml" target="_blank" rel="noopener noreferrer">
+          <a href="https://hesperis.netlify.com/rss.xml" target="_blank" rel="noopener noreferrer">
             RSS
           </a>
         </div>
@@ -22,10 +22,10 @@ export default class Footer extends Component {
           <a href="https://github.com/ndessenius" title="Open-source on GitHub">
             <img src={github} target="_blank" rel="noopener noreferrer" className="footer-img" />
           </a>
-          <a href="https://www.netlify.com/" title="Hosted by Netlify">
+          <a href="https://www.netlify.com/" title="Hébergé par Netlify">
             <img src={netlify} target="_blank" rel="noopener noreferrer" className="footer-img" />
           </a>
-          <a href="https://www.gatsbyjs.org/" title="Built with Gatsby">
+          <a href="https://www.gatsbyjs.org/" title="Créé à l’aide de Gatsby">
             <img src={gatsby} target="_blank" rel="noopener noreferrer" className="footer-img" />
           </a>
         </div>

@@ -8,10 +8,6 @@ import ProjectListing from '../components/ProjectListing'
 import SimpleListing from '../components/SimpleListing'
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
-import projects from '../../data/projects'
-import speaking from '../../data/speaking'
-import podcasts from '../../data/podcasts'
-import quotes from '../../data/quotes'
 import hesperis from '../../content/images/avatar.png'
 import background from '../../content/images/intothenight.svg'
 
@@ -64,7 +60,7 @@ export default class Index extends Component {
           <div className="newsletter-section">
               <img src={background} className="newsletter-avatar" alt="hesperis" />
               <div>
-               
+
               </div>
             </div>
           </div>

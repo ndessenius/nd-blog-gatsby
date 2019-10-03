@@ -16,7 +16,7 @@ export default class CategoriesPage extends Component {
         <SEO />
         <Helmet title={`Categories – ${config.siteTitle}`} />
         <div className="container">
-          <h1>Categories</h1>
+          <h1>Catégories</h1>
           <div className="tag-container">
             {group.map(category => (
               <Link to={`/categories/${kebabCase(category.fieldValue)}`} key={category.fieldValue}>
