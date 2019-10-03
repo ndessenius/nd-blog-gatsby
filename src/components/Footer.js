@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import netlify from '../../content/images/netlify.png'
 import gatsby from '../../content/thumbnails/gatsby.png'
-import github from '../../content/images/github.png'
+import github from '../../content/images/github.svg'
 import { Link } from 'gatsby'
 
 export default class Footer extends Component {
