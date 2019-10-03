@@ -4,7 +4,7 @@ import floppy from '../images/floppy.png'
 import avatar from '../../content/images/avatar.png'
 import sun from '../images/sun.svg'
 import moon from '../images/moon.svg'
-import kofi from '../../content/images/kofi3.png'
+import kofi from '../../content/thumbnails/kofi.png'
 import ThemeContext from '../context/ThemeContext'
 
 export default class Navigation extends Component {
