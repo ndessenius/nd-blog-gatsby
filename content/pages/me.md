@@ -37,4 +37,4 @@ Mes playlists Spotify
 - **Editeur:** [Visual Studio Code](https://code.visualstudio.com/)
 - **Ecriture:** [Scrivener](https://www.literatureandlatte.com/scrivener/overview)
 - **Code Theme:** [New Moon](https://taniarascia.github.io/new-moon)
-- **Prise de notes:** [SimpleNote](https://simplenote.com/)
+- **Prise de notes:** [Typora](https://typora.io)
