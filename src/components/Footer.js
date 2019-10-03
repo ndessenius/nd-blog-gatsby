@@ -19,7 +19,7 @@ export default class Footer extends Component {
           </a>
         </div>
         <div>
-          <a href="https://github.com/ndessenius" title="Open-source on GitHub">
+          <a href="https://github.com/ndessenius" title="Projet open source sur Github !">
             <img src={github} target="_blank" rel="noopener noreferrer" className="footer-img" />
           </a>
           <a href="https://www.netlify.com/" title="Hébergé par Netlify">
