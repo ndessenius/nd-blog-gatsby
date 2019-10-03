@@ -13,7 +13,7 @@ const config = {
   siteRss: '/rss.xml',
   googleAnalyticsID: 'UA-42068444-1',
   postDefaultCategoryID: 'Tech',
-  commentsApi: 'https://nd-comments-api.herokuapp.com/comments',
+  commentsApi: 'https://cors-anywhere.herokuapp.com/https://nd-comments-api.herokuapp.com/comments',
   newsletter: 'https://taniarascia.substack.com',
   newsletterEmbed: 'https://taniarascia.substack.com/embed',
   userName: 'Hesperis',
