@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import moment from 'moment'
+import 'moment/locale/fr'
+moment.locale('fr')
 import config from '../../data/SiteConfig'
 
 export default class Comments extends Component {
@@ -21,6 +23,7 @@ export default class Comments extends Component {
 
     this.state = this.initialState
   }
+
 
   componentDidUpdate(prevProps) {
     const { commentsList } = this.props
@@ -86,23 +89,23 @@ export default class Comments extends Component {
     const showError = () =>
       error && (
         <blockquote className="error">
-          <p>Comments disabled.</p>
+          <p>Commentaires désactivés.</p>
         </blockquote>
       )
     const showSuccess = () =>
       success && (
         <blockquote className="success">
-          <p>Comment submitted!</p>
+          <p>Commentaire envoyé !</p>
         </blockquote>
       )
 
     const commentTitle = commentLength => {
       if (commentLength < 1) {
-        return 'Leave a comment'
+        return 'Laisser un commentaire'
       } else if (commentLength === 1) {
-        return '1 comment'
+        return '1 commentaire'
       } else {
-        return `${commentLength} comments`
+        return `${commentLength} commentaires`
       }
     }
 
@@ -122,7 +125,7 @@ export default class Comments extends Component {
                 onChange={this.handleChange}
                 minLength="3"
                 maxLength="255"
-                placeholder="Name"
+                placeholder="Nom"
                 required
               />
               <textarea
@@ -134,14 +137,14 @@ export default class Comments extends Component {
                 onChange={this.handleChange}
                 minLength="20"
                 maxLength="1000"
-                placeholder="Comment"
+                placeholder="Commentaire"
                 required
               />
               <div style={{ marginBottom: '.5rem' }}>
-                <small>Plain text only. Comment must be over 20 characters.</small>
+                <small>Commentaire de minimum 20 caractères requis.</small>
               </div>
               <button type="submit" disabled={!name || !text || text.length < 20 || submitting}>
-                Submit
+                Envoyer
               </button>
             </form>
           </>

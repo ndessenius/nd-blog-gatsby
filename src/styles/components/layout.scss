@@ -1,4 +1,6 @@
+
 #main-content {
+
   margin-top: 55px;
   padding: 40px 0 0;
   min-height: calc(100vh - 162px);
@@ -26,6 +28,7 @@
 }
 
 .lead {
+
   margin: 0 auto;
   font-size: 1.1rem;
 
@@ -1070,6 +1073,11 @@ button[disabled] {
   }
 }
 
+
+.background-section {
+
+  background-image: url('../../content/images/intothenight.svg');
+}
 .newsletter-section {
   display: flex;
   align-items: center;
@@ -1078,14 +1086,16 @@ button[disabled] {
   margin: 2rem 0;
   padding: 1.5rem;
   text-align: center;
-  box-shadow: $box-shadow;
+  // box-shadow: $box-shadow;
 
+  @media (max-width: #{$desktop}) {
   .newsletter-avatar {
     margin-top: 0.5rem;
     border-radius: 8px;
-    width: 50px;
+    width: 500px;
+    display: none;
   }
-
+  }
   p {
     font-size: 1.2rem;
   }
@@ -1106,6 +1116,11 @@ button[disabled] {
       width: 75px;
     }
 
+@include medium-breakpoint {
+  .newsletter-avatar {
+    width: 500px;
+  }
+}
     .button {
       font-size: 1.5rem;
       padding: 1.2rem;

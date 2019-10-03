@@ -12,7 +12,8 @@ import projects from '../../data/projects'
 import speaking from '../../data/speaking'
 import podcasts from '../../data/podcasts'
 import quotes from '../../data/quotes'
-import tania from '../../content/images/taniawarm.jpg'
+import hesperis from '../../content/images/avatar.png'
+import background from '../../content/images/intothenight.svg'
 
 export default class Index extends Component {
   render() {
@@ -28,41 +29,42 @@ export default class Index extends Component {
         <div className="container">
           <div className="lead">
             <div className="elevator">
-              <h1>I'm Tania</h1>
+              <h1>Bienvenue !</h1>
               <p>
-                I write about modern JavaScript, Node.js, design and all things web development.
+               Je suis Nicolas. Auteur amateur, développeur web et sysadmin. J’essaie également de dessiner pendant mon temps libre.
               </p>
               <div className="social-buttons">
                 <div>
                   <a
                     className="twitter-follow-button"
-                    href="https://twitter.com/taniarascia"
+                    href="https://twitter.com/ndessenius"
                     data-size="large"
+                    data-lang="fr"
+                    data-dnt="true"
                     data-show-screen-name="false"
                   >
-                    Follow @taniarascia
+                    Suivre
                   </a>
+
                 </div>
                 <div>
                   <GitHubButton
-                    href="https://github.com/taniarascia"
+                    href="https://github.com/ndessenius"
                     data-size="large"
                     data-show-count="true"
-                    aria-label="Follow @taniarascia on GitHub"
+                    aria-label="Follow @ndessenius on GitHub"
                   >
-                    Follow
+                    Suivre
                   </GitHubButton>
                 </div>
               </div>
             </div>
-            <div className="newsletter-section">
-              <img src={tania} className="newsletter-avatar" alt="Tania" />
+
+
+          <div className="newsletter-section">
+              <img src={background} className="newsletter-avatar" alt="hesperis" />
               <div>
-                <h3>Get updates</h3>
-                <p>Open source projects and development tutorials</p>
-                <a className="button" href="https://taniarascia.substack.com">
-                  Subscribe
-                </a>
+               
               </div>
             </div>
           </div>
@@ -71,9 +73,9 @@ export default class Index extends Component {
         <div className="container front-page">
           <section className="section">
             <h2>
-              Latest Articles
+              Derniers articles
               <Link to="/blog" className="view-all">
-                View all
+                Voir tout
               </Link>
             </h2>
             <PostListing simple postEdges={latestPostEdges} />
@@ -81,20 +83,20 @@ export default class Index extends Component {
 
           <section className="section">
             <h2>
-              Most Popular
+              Les plus populaires
               <Link to="/categories/popular" className="view-all">
-                View all
+                Voir tout
               </Link>
             </h2>
             <PostListing simple postEdges={popularPostEdges} />
           </section>
 
-          <section className="section">
+          {/* <section className="section">
             <h2>Open Source Projects</h2>
             <ProjectListing projects={projects} />
-          </section>
+          </section> */}
 
-          <section className="section">
+          {/* <section className="section">
             <h2>Podcasts</h2>
             <SimpleListing simple data={podcasts} />
           </section>
@@ -102,9 +104,9 @@ export default class Index extends Component {
           <section className="section">
             <h2>Speaking</h2>
             <SimpleListing simple data={speaking} />
-          </section>
+          </section> */}
 
-          <section className="section">
+          {/* <section className="section">
             <h2>{`Other People's Opinions`}</h2>
             <div className="quotations">
               {quotes.map(quote => (
@@ -114,7 +116,8 @@ export default class Index extends Component {
                 </blockquote>
               ))}
             </div>
-          </section>
+          </section> */}
+
         </div>
       </Layout>
     )

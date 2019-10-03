@@ -48,12 +48,12 @@ export default class PostListing extends Component {
                 </div>
                 {newest && (
                   <div className="alert">
-                    <div className="new">New!</div>
+                    <div className="new">Récent !</div>
                   </div>
                 )}
                 {popular && !simple && !newest && (
                   <div className="alert">
-                    <div className="popular">Popular</div>
+                    <div className="popular">Populaire</div>
                   </div>
                 )}
               </div>

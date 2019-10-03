@@ -59,7 +59,7 @@ export default class PostTemplate extends Component {
     const githubLink = editOnGithub(post)
     const twitterShare = `http://twitter.com/share?text=${encodeURIComponent(post.title)}&url=${
       config.siteUrl
-    }/${post.slug}/&via=taniarascia`
+    }/${post.slug}/&via=ndessenius`
 
     const commentTitle = commentLength => {
       if (commentLength < 1) {
@@ -85,7 +85,7 @@ export default class PostTemplate extends Component {
               <div className="post-meta">
                 <time className="date">{date}</time>/
                 <a className="twitter-link" href={twitterShare}>
-                  Share
+                  Partager
                 </a>
                 /
                 {!error && (
@@ -102,7 +102,7 @@ export default class PostTemplate extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Edit ✏️
+                  Editer ✏️
                 </a>
               </div>
               <PostTags tags={post.tags} />
@@ -112,7 +112,7 @@ export default class PostTemplate extends Component {
           <div className="post" dangerouslySetInnerHTML={{ __html: postNode.html }} />
         </article>
         <div className="container">
-          <NewsletterForm />
+          {/* <NewsletterForm /> */}
         </div>
         <UserInfo config={config} />
         <div className="container">
